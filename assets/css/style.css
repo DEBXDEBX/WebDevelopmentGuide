@@ -1,0 +1,118 @@
+/* Reset */
+* {
+  /* padding will not add to the ACTUALLY WIDTH OF THE BOX */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  /* background-color: black; */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7em;
+  transition: background-color 1.7s ease;
+  height: 100vh;
+}
+h6 {
+  margin: 10px auto;
+  text-align: center;
+  background-color: #313131;
+  border-radius: 5px;
+  padding: 1rem;
+  color: white;
+  max-width: 80%;
+}
+h6 > span {
+  color: #2de11d;
+}
+h4 {
+  margin: 2px 0px 40px 2px;
+  background-color: #0f1313;
+  padding: 3px;
+  color: #2de11d;
+}
+h3 {
+  text-align: center;
+  margin: 20 0 0 0;
+}
+img {
+  border-radius: 20px;
+}
+/* Hide everything at start up */
+#headingMainFolder,
+#headingSubFolder,
+#headingNote {
+  display: none;
+}
+
+#fileCabHeading,
+#headingMainFolder,
+#headingSubFolder,
+#headingNote,
+.setFlex,
+.note {
+  box-shadow: 3px 2px 5px 0px black;
+}
+#headingNote {
+  margin-bottom: 44px;
+}
+.active {
+  color: white;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 4px 9px black;
+  transform: scale(1.1);
+}
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 3px;
+  margin: 3px;
+}
+
+nav ul li {
+  list-style: none;
+  background-color: #d0215cbd;
+  color: rgb(0, 0, 0);
+  padding: 3px 10px;
+  margin: 4px 10px;
+  border-radius: 10px 10px 0px 0px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  transition: transform 0.9s cubic-bezier(0.45, 1.87, 0.62, 1.6);
+}
+
+nav ul li:hover {
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+}
+
+.fileCab:hover {
+  cursor: pointer;
+}
+.main:hover {
+  cursor: pointer;
+}
+.sub:hover {
+  cursor: pointer;
+}
+
+#noteList {
+  margin: 10px auto;
+  width: 98%;
+}
+.note {
+  white-space: pre;
+  background-color: #202020;
+  border-radius: 10px 10px 0px 0px;
+  padding: 14px;
+  overflow: auto;
+}
+
+p {
+  width: 60%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 20px;
+}
