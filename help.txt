@@ -1,0 +1,3 @@
+open debx file and select all and copy.
+open project json file, select all and delete.
+paste in new json and save.
